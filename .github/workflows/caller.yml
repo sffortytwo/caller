@@ -1,11 +1,12 @@
 name: caller
 
 on:
-  schedule:
-    - cron: "* * * * *"
+  push:
+    branches:
+      - main
 
 jobs:
   pipeline:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo ${{ github.event_name }}
+    uses: sffortytwo/data-pipeline-library/.github/workflows/pipeline.yml@main
+    with:
+      username: jack
