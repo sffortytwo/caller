@@ -1,0 +1,12 @@
+name: caller
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  pipeline:
+    uses: sffortytwo/data-pipeline-library/.github/workflows/pipeline.yml@main
+    with:
+      username: john
