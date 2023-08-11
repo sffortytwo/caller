@@ -7,6 +7,6 @@ on:
 
 jobs:
   pipeline:
-    uses: sffortytwo/data-pipeline-library/.github/workflows/pipeline.yml@main
+    uses: sffortytwo/data-pipeline-library@main
     with:
-      username: john
+      username: jake
